@@ -1,4 +1,12 @@
-version: 2
+version: 2.1
+
+workflows:
+  my-workflow:
+    jobs:
+      - run-tests:
+          context:
+            - CxSAST
+
 jobs:
   build:
     docker:
