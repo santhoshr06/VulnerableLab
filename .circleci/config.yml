@@ -1,11 +1,10 @@
 version: 2.1
 
 workflows:
-  my-workflow:
+  test-env-vars:
     jobs:
-      - run-tests:
-          context:
-            - CxSAST
+      - build:
+          context: CxSAST
 
 jobs:
   build:
